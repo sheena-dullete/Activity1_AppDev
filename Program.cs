@@ -3,6 +3,7 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("===================================");
         Console.WriteLine("Hello! Tell us about yourself.");
         string name, course;
         GetInput(out name, out course);
@@ -18,7 +19,8 @@ class Program
         Console.WriteLine("\nEnter your Course (BSCS, BSIT): ");
         course = Console.ReadLine() ?? "Undeclared";
 
-        Console.WriteLine("Hello, " + name + "!");
+        Console.WriteLine("===================================");
+        Console.WriteLine("\nHello, " + name + "!");
     }
 
     static void checkCourse(string course)
