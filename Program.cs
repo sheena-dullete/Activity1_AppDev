@@ -3,15 +3,15 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("WELCOME!");
+        Console.WriteLine("Hello! Tell us about yourself.");
         string name;
         GetInput(out name);
     }
 
     static void GetInput(out string name)
     {
-        Console.WriteLine("Enter name:");
-        name = Console.ReadLine();
+        Console.WriteLine("\nEnter your name: ");
+        name = Console.ReadLine() ?? "Anonymous";
 
         Console.WriteLine("Hello, " + name + "!");
     }
